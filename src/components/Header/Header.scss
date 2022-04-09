@@ -1,0 +1,17 @@
+@use "../../assets/scss/variables" as *;
+
+.header { 
+  position: relative;
+  left: 20%;
+  width: 60%;
+  padding: 10px 0;
+  background-color: $colour-header;
+  border-bottom: 1px solid #9eacd1;
+  background-color: transparent;
+  border-radius: 100%;
+
+  .header__title {
+    text-align: center;
+    color: $colour-primary;
+  }
+}

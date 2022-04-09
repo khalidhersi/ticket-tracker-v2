@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# React Ticket Tracker Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![deploy-website](./src/assets/images/screenshot.png)
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The aim of this project was to cement foundational knowledge of React. The task was to create a ticket tracker that could be utilised by a team to keep track of how many tickets (tasks) each team member had left to complete.
 
-### `npm start`
+## Design Approach
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![deploy-website](./src/assets/images/component-tree.png)
+_Component Tree of Ticket Tracker_
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mock data was to be imported into app component. This data was then passed down as a prop to the tickets component. Each card was rendered based on props past down from the tickets component. Therefore, by passing down functions as props to the card components, each card state could be lifted up to the tickets component.
 
-### `npm test`
+Lifting up card state enabled features to be added such as filtering cards visiblity based on colour.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Card colour was another feature enabled by lifting up the state of each card. By lifting up card state an average count could be calculated. Therefore, each card could be coloured in relation to all other cards. This feature was added so that members of a team using the ticket tracker could assess performance and progress in relation to one another.
 
-### `npm run build`
+Buttons were used for all interactive elements so that the user can interact with the app entirely without a mouse if necessary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HTML Canvas was integrated to make improve the aesthetic of the website. Using an OOP approach, a random number of particles (within limits) at random locations on the page with random colours are created and rendered when the page is loaded.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Noticable on smaller screens, a parallax scroll was added to add movement to the background shapes, giving the page a more dynamic feel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Links to Project
 
-### `npm run eject`
+### Deployed Site
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://khalidhersi.github.io/ticket-tracker-v2/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### GitHub Repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/khalidhersi/ticket-tracker-v2 
