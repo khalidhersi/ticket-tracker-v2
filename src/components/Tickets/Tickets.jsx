@@ -33,7 +33,7 @@ const Tickets = ({ teamData }) => {
   };
 
   const getNewCount = (index, ticketIndex, isAdd, count) => {
-    if (ticketIndex != index || (!isAdd && !count)) return count; // if ticket index isn't the current index or if operation is decrement and count is 0 return count unchanged
+    if (ticketIndex !== index || (!isAdd && !count)) return count; // if ticket index isn't the current index or if operation is decrement and count is 0 return count unchanged
     return isAdd ? count + 1 : count - 1;
   };
 
@@ -84,7 +84,6 @@ const Tickets = ({ teamData }) => {
   };
 
   const cardListJSX = data.map((ticket) => {
-    {
       if (ticket.visible)
         return (
           <Card
@@ -97,7 +96,7 @@ const Tickets = ({ teamData }) => {
             alterCount={alterCount}
           />
         );
-    }
+        else return (<></>);
   });
 
   return (

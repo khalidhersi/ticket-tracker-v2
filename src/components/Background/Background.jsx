@@ -17,11 +17,13 @@ const Background = () => {
     <>
       <img
         src={bgLeft}
+        alt="left"
         className="background__img background__img--left"
         style={{ transform: `translateX(${-offsetY * 0.01}%)` }}
       />
       <img
         src={bgRight}
+        alt="right"
         className="background__img background__img--right"
         style={{ transform: `translateX(${offsetY * 0.01}%)` }}
       />
