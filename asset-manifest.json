@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ticket-tracker-v2/static/css/main.888d187f.css",
+    "main.js": "/ticket-tracker-v2/static/js/main.f57ae4b1.js",
+    "static/js/787.17bc0db5.chunk.js": "/ticket-tracker-v2/static/js/787.17bc0db5.chunk.js",
+    "static/media/bg-right.svg": "/ticket-tracker-v2/static/media/bg-right.2259d28752a27fb6d86b795483e6e51a.svg",
+    "static/media/bg-left.svg": "/ticket-tracker-v2/static/media/bg-left.2996eb22b53fce1bd3919fccfb4949e9.svg",
+    "index.html": "/ticket-tracker-v2/index.html",
+    "main.888d187f.css.map": "/ticket-tracker-v2/static/css/main.888d187f.css.map",
+    "main.f57ae4b1.js.map": "/ticket-tracker-v2/static/js/main.f57ae4b1.js.map",
+    "787.17bc0db5.chunk.js.map": "/ticket-tracker-v2/static/js/787.17bc0db5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.888d187f.css",
+    "static/js/main.f57ae4b1.js"
+  ]
+}
